@@ -21,18 +21,3 @@ const isPalindromeNum = (num) => {
 console.log(isPalindromeNum(1231));
 console.log(isPalindromeNum(121));
 
-const isPalindromeString = (str) => {
-  const len = str.length;
-
-  for (let i = 0; i < len / 2; i++) {
-    if (str[i] !== str[len - 1 - i]) {
-      return false;
-    }
-  }
-
-  return true;
-};
-
-// Usage:
-console.log(isPalindromeString("racecar")); // true
-console.log(isPalindromeString("aza")); // false
