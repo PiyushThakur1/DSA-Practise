@@ -7,14 +7,17 @@
 // };
 
 const printAllDivisors = (num) => {
+  const divisors = [];
   for (let i = 1; i <= Math.sqrt(num); i++) {
     if (num % i == 0) {
-      console.log(i);
+      divisors.push(i);
       if (num / i != i) {
-        console.log(num / i);
+        divisors.push(num / i);
       }
     }
   }
+  divisors.sort((a, b) => a - b);
+  console.log(divisors.join("\n"));
 };
 
 printAllDivisors(36);
