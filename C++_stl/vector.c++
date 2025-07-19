@@ -53,7 +53,22 @@ void explainVector() {
     v.erase(v.begin()+2,v.begin()+3);
 
     // insert function
+    vector<int> v(2, 100); // 100,100
+    v.insert(v.begin(),300); // 300,100,100
+    v.insert(v.begin() + 1,2, 18); //300,18,18,100,100
 
+    vector<int> copy(2,50);//50, 50
+    v.insert(v.begin(), copy.begin(), copy.end()); // 50, 50,300, 18,18,100,100
+    cout<<v.size();// 7
+    v.pop_back();//pops the alst element
+
+    //v1 10,20
+    //v2 30, 40
+    v1.swap(v2);//v1--> 30, 40 , v2 --> 10, 20
+
+    v1.clear(); //trims down town to empty vector
+
+    cout<<v.empty();// prints  true  vector is empty
 }
 
 int main(){
