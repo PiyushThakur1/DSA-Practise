@@ -69,7 +69,7 @@ void explainVector() {
     v1.clear(); //trims down town to empty vector
 
     cout<<v.empty();// prints  true  vector is empty
-}
+} 
 
 int main(){
 
