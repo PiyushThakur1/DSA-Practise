@@ -12,7 +12,7 @@ void explainStack() {
 
     cout << st.top(); // print 4 " ** str[2] is invalid here"
 
-    st.pop(); // st looks like 3,2,1..remove 4
+    st.pop(); // st looks like 3,2,1..removed 4
 
     cout <<st.top();//3
     cout <<st.size(); //3

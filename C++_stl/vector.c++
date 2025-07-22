@@ -15,8 +15,9 @@ void explainVector() {
 
     vector<int> v(5);//5 instance with 0 value or any garbage value
 
-     // copy of vector 
+      
     vector<int> v1(5,20);// even after intilizing its sixe we can still add more value to it.
+    // copy of vector
     vector<int> v2(v1);
 
     //elements of vector can be accessed same way as array
