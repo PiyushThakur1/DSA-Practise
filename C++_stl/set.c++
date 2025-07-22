@@ -41,7 +41,8 @@ void explainSet() {
     auto it = st.lower_bound(2);
     auto it = st.upper_bound(3);
 
-}
+} //(logn)
+
 
 // everything is same as set
 // only stores duplicates elements also
@@ -63,4 +64,17 @@ void multiSet(){
 
 }
 
-//(logn)
+
+void explainUSet(){
+unordered_set<int> st;
+    // unordered set --  uniquenes is there but it does not store in sorted order-- order is randomized
+// lower_bound and upper_bound func
+// does not works, rest all functions are same
+// as above, it does not stores in any
+// particular order it has a better complexity
+// than set in most cases, except some when collision happens
+
+}
+
+// 0(1)
+// wrst case --> 0(n)
