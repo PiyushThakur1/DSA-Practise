@@ -87,19 +87,93 @@
 # change_x()
 # print("Outside function:", x)
 
-def is_primme(num):
-    if(num == 1):
-        return False
-    if(num == 2):
-        return True
-    if(num % 2 == 0):
-        return False
+# def is_primme(num):
+#     if(num == 1):
+#         return False
+#     if(num == 2):
+#         return True
+#     if(num % 2 == 0):
+#         return False
 
-    for i in range(3,num):
-        if(num % i == 0):
-            return False
-    return True
+#     for i in range(3,num):
+#         if(num % i == 0):
+#             return False
+#     return True
 
-print(is_primme(2))
-print(is_primme(232))
-print(is_primme(17))
+# print(is_primme(2))
+# print(is_primme(232))
+# print(is_primme(17))
+
+# <----------------------Basic Data Structures in Python------------------------>
+
+# Lists- is a mutable,ordered collection.
+
+# fruits = ["apple", "banana", "cherry"]
+# print(fruits[0])
+# fruits.append("mango")
+# fruits.remove("banana")
+# print(len(fruits))
+
+# # List Methods
+
+# fruits.insert(1,"orange") #insert at index 1
+# fruits.pop() # removes last element
+# fruits.sort() #sort the list
+# fruits.reverse()
+
+# #  list slicing
+# nums = [0,1,2,3,4,5,6]
+# print(nums[2:4]) # [1,2,3]
+# print(nums[:3]) #[ 0,1,2]
+# print(nums[::-1]) # reversed
+
+# # Tuples --- immutable (cant change values after creation).
+
+# coordinates = (10,20)
+# print(coordinates[0])
+
+#  Sets --- unordered and contains only unique elements
+
+# nums = {1,2,3,4,5,1,2}
+# print(nums)
+
+# nums.add(20)
+# nums.add(6)
+# nums.remove(3)
+# print(3 in nums)
+
+#  Set operations
+
+# a = {1, 2, 3}
+# b = {3, 4, 5}
+# print(a | b)   # Union: {1, 2, 3, 4, 5}
+# print(a & b)   # Intersection: {3}
+# print(a - b)   # Difference: {1, 2}
+
+# Dictionaries ----> holds key value pairs
+
+# person = {"name": "Piyush", "age": 20}
+# print(person["name"]) # Piyush
+
+# person["city"] = "Kishtwar" # Add new Key
+# del person["age"] # delete key
+
+# # Dictionary Method
+
+# print(person.get("name"))        # Piyush
+# print(person.keys())             # dict_keys(['name', 'city'])
+# print(person.values())           # dict_values(['Piyush', 'Delhi'])
+# print(person.items())            # dict_items([('name', 'Piyush'), ('city', 'Delhi')])
+
+# Task 4
+
+# nums_list = list(map(int, input("Enter Numbers: ").split()))
+# print(nums_list)
+# nums_set = set(nums_list)
+# print(nums_set)
+
+# nums_dictionary = {num : num ** 2 for num in nums_set}
+# print(nums_dictionary)
+
+# <----------------------String Operations in Python------------------------>
+
