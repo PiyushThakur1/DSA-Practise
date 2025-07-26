@@ -177,3 +177,9 @@
 
 # <----------------------String Operations in Python------------------------>
 
+# str = str(input("Enter String: "))
+# print(str[::-1])
+# str_list = list(str)
+# print(str_list)
+# str_dictionary = {str: str_list.count(str) for str in str_list}
+# print(str_dictionary)
